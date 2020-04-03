@@ -1,0 +1,9 @@
+<archimate:Goal
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Cíl (Goal)"
+    id="archimate_metamodel_Goal"
+    documentation="Koncový stav, kterého chce zainteresovaný subjekt (stakeholder) dosáhnout.">
+  <properties
+      key="Vrstva"
+      value="Motivační vrstva"/>
+</archimate:Goal>

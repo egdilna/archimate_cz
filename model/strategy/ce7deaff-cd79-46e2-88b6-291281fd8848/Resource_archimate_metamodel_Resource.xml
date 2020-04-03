@@ -1,0 +1,9 @@
+<archimate:Resource
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Zdroj (Resource)"
+    id="archimate_metamodel_Resource"
+    documentation="Představuje definovatelný zdroj, který je za potřebí mít k dodažení strategie a který se využije pro realizaci strategií, byznysu a procesů.">
+  <properties
+      key="Vrstva"
+      value="Strategická vrstva"/>
+</archimate:Resource>

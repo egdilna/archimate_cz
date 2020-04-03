@@ -1,0 +1,9 @@
+<archimate:Contract
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Kontrakt, předpis (Contract)"
+    id="archimate_metamodel_Contract"
+    documentation="Formální nebo neformální specifikace dohody, která specifikuje práva a povinnosti spojené s produktem.">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:Contract>

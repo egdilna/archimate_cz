@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Datový objekt (DataObject)"
+    id="archimate_metamodel_DataObject"
+    documentation="Pasivní element, který je zpracováván za použití výpočetní techniky. Jedná se o data, soubor dat nebo údajů, které jsou zpracovávány většinou v rámci aplikační komponenty.">
+  <properties
+      key="Vrstva"
+      value="Aplikační vrstva"/>
+</archimate:DataObject>

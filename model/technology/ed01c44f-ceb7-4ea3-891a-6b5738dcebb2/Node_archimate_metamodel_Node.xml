@@ -1,0 +1,9 @@
+<archimate:Node
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Uzel (Node)"
+    id="archimate_metamodel_Node"
+    documentation="Výpočetní zdroj, na kterém mohou být skladovány, dislokovány nebo zpracovávány artefakty pro použití. Poskytuje především služby výpočetního výkonu a datových kapacit.">
+  <properties
+      key="Vrstva"
+      value="Technologická vrstva"/>
+</archimate:Node>

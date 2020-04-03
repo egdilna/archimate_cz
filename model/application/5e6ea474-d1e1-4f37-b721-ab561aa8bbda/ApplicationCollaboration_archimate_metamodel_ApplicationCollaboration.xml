@@ -1,0 +1,9 @@
+<archimate:ApplicationCollaboration
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Aplikační spolupráce (ApplicationCollaboration)"
+    id="archimate_metamodel_ApplicationCollaboration"
+    documentation="Souhrn dvou nebo více komponent aplikací, které pracují společně za účelem vykonání kolektivního chování">
+  <properties
+      key="Vrstva"
+      value="Aplikační vrstva"/>
+</archimate:ApplicationCollaboration>

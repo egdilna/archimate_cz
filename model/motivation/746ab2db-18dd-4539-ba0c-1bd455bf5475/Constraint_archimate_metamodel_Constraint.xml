@@ -1,0 +1,9 @@
+<archimate:Constraint
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Omezení (Constraint)"
+    id="archimate_metamodel_Constraint"
+    documentation="Omezení na cestě k realizaci systému.">
+  <properties
+      key="Vrstva"
+      value="Motivační vrstva"/>
+</archimate:Constraint>

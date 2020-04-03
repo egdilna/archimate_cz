@@ -1,0 +1,9 @@
+<archimate:TechnologyInterface
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Rozhraní infrastruktury (TechnologyInterface)"
+    id="archimate_metamodel_TechnologyInterface"
+    documentation="Přístupový bod, kde služby infrastruktury nabízené uzlem mohou být využity jiným uzlem nebo komponentou aplikace.">
+  <properties
+      key="Vrstva"
+      value="Technologická vrstva"/>
+</archimate:TechnologyInterface>

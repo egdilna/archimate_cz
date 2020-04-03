@@ -1,0 +1,9 @@
+<archimate:Requirement
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Požadavek (Requirement)"
+    id="archimate_metamodel_Requirement"
+    documentation="Stanovisko, formálně vyjádřená potřeba, která musí být v systému (resp. architekturou) realizována. Jedná se o architektonické nikoli byznysové požadavky.">
+  <properties
+      key="Vrstva"
+      value="Motivační vrstva"/>
+</archimate:Requirement>

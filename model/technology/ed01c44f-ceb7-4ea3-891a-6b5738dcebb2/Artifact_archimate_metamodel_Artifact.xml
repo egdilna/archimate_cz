@@ -1,0 +1,9 @@
+<archimate:Artifact
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Artefakt (Artifact)"
+    id="archimate_metamodel_Artifact"
+    documentation="Artefaktem se rozumí fyzická reprezentace dat, která je používána či vytvářena systémem.">
+  <properties
+      key="Vrstva"
+      value="Technologická vrstva"/>
+</archimate:Artifact>

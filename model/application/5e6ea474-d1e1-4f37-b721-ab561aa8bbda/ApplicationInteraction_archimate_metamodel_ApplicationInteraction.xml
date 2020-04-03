@@ -1,0 +1,9 @@
+<archimate:ApplicationInteraction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Interakce aplikace (ApplicationInteraction)"
+    id="archimate_metamodel_ApplicationInteraction"
+    documentation="Prvek chování, který popisuje chování aplikací při jejich kooperaci.">
+  <properties
+      key="Vrstva"
+      value="Aplikační vrstva"/>
+</archimate:ApplicationInteraction>

@@ -1,0 +1,9 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Pracovní blok (WorkPackage)"
+    id="archimate_metamodel_WorkPackage"
+    documentation="Série akcí navržená tak, aby dosáhla vytyčeného cíle ve specifikovaném čase.">
+  <properties
+      key="Vrstva"
+      value="Implementační vrstva"/>
+</archimate:WorkPackage>

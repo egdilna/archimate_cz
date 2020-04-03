@@ -1,0 +1,9 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Objekt (BusinessObject)"
+    id="archimate_metamodel_BusinessObject"
+    documentation="Pasivní element, který má relevanci z předmětného pohledu. Jedná se o fyzický či logický objekt, o němž se vykonává proces či služba. Dokument, doklad, žádost, dávka, rozhodnutí, prakticky cokoliv, co se dá fyzicky či logicky reprezentovat.">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:BusinessObject>

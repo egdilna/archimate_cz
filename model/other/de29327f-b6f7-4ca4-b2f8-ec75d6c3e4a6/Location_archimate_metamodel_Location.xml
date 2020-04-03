@@ -1,0 +1,9 @@
+<archimate:Location
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Lokalita, místo (Location)"
+    id="archimate_metamodel_Location"
+    documentation="Místo v prostoru, kde se nacházejí aktéři nebo kde je vykonáváno chování.">
+  <properties
+      key="Vrstva"
+      value="Ostatní"/>
+</archimate:Location>

@@ -1,0 +1,9 @@
+<archimate:Product
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Produkt (Product)"
+    id="archimate_metamodel_Product"
+    documentation="Produkt je soubor služeb definovaných kontraktem (zákonem), které jsou společně poskytovány klientovi (pro jeho životní situaci).">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:Product>

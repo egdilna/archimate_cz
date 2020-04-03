@@ -1,0 +1,9 @@
+<archimate:Outcome
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Výstup (Outcome)"
+    id="archimate_metamodel_Outcome"
+    documentation="Reprezentuje jednoznačný výstup, zejména jako výsledek schopností organizace či výsledek obchodního snažení nebo realizace strategie. Výstup je buď hmatatelný na úrovni dovednosti vytvářet produkt, nebo se jedná o výstup jež se pozitivně odráží na podnikání či činnosti organizace. Jednou z motivací pro zlepšení organizace je tedy dovednost učinit výstup.">
+  <properties
+      key="Vrstva"
+      value="Motivační vrstva"/>
+</archimate:Outcome>

@@ -1,0 +1,30 @@
+<archimate:ArchimateDiagramModel
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Zobrazení Archimate elementů (ostatní)"
+    id="cbbcaf1d-6377-497a-8cf2-071875b4626a">
+  <children
+      xsi:type="archimate:DiagramModelArchimateObject"
+      id="01b2f5bd-168d-43db-a1be-aa90e482b3e0">
+    <bounds
+        x="20"
+        y="20"
+        width="120"
+        height="55"/>
+    <archimateElement
+        xsi:type="archimate:Location"
+        href="Location_archimate_metamodel_Location.xml#archimate_metamodel_Location"/>
+  </children>
+  <children
+      xsi:type="archimate:DiagramModelArchimateObject"
+      id="ae183d44-ddb6-492a-87a9-0ec9d92a9961">
+    <bounds
+        x="204"
+        y="40"
+        width="15"
+        height="15"/>
+    <archimateElement
+        xsi:type="archimate:Junction"
+        href="Junction_archimate_metamodel_Junction.xml#archimate_metamodel_Junction"/>
+  </children>
+</archimate:ArchimateDiagramModel>

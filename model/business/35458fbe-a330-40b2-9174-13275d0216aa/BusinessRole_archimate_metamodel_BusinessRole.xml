@@ -1,0 +1,9 @@
+<archimate:BusinessRole
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Role (BusinessRole)"
+    id="archimate_metamodel_BusinessRole"
+    documentation="Role je fakticky zodpovědnost za vykonávání specifického chování, ke které může být přiřazen účastník procesu.">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:BusinessRole>

@@ -1,0 +1,9 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Aplikace, Systém, Komponenta aplikace, Modul, Část aplikace (ApplicationComponent)"
+    id="archimate_metamodel_ApplicationComponent"
+    documentation="Modulární, nasaditelná a nahraditelná část softwarového systému, zapouzdřující své chování a data, která poskytuje skrz sadu rozhraní. Může se jednat o celý logický informační systém, o nějakou ucelenou komponentu nebo modul, nebo o část aplikace, jež se nasazuje a rozvíjí jako část celku.">
+  <properties
+      key="Vrstva"
+      value="Aplikační vrstva"/>
+</archimate:ApplicationComponent>

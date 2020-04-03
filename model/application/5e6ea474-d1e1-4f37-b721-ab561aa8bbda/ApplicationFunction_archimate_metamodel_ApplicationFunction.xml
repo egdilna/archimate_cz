@@ -1,0 +1,9 @@
+<archimate:ApplicationFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Aplikační funkce (ApplicationFunction)"
+    id="archimate_metamodel_ApplicationFunction"
+    documentation="Aplikační funkce je definována jako interní chování jedné aplikační komponenty.">
+  <properties
+      key="Vrstva"
+      value="Aplikační vrstva"/>
+</archimate:ApplicationFunction>

@@ -1,0 +1,9 @@
+<archimate:Junction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Spojení (Junction)"
+    id="archimate_metamodel_Junction"
+    documentation="Spojení slouží k vyjádření toho, že se na nějakém vztahu podílí více prvků. Může se jednat o více prvků na vstupu a jediný na výstupu, o jeden na vstupu a více na výstupu a nebo o více prvků na obou stranách. Slouží k vyjádření, že pro realizaci daného vztahu je nutno počítat se zapojením více elementů.">
+  <properties
+      key="Vrstva"
+      value="Ostatní"/>
+</archimate:Junction>
