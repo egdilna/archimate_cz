@@ -1,0 +1,9 @@
+<archimate:CourseOfAction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Prováděcí postup (CourseOfAction)"
+    id="archimate_metamodel_CourseOfAction"
+    documentation="Prováděcí postup je přístup nebo plán pro konfiguraci některých schopností a zdrojů podniku, prováděných za účelem dosažení cíle. Prováděcí postup představuje to, co se podnik rozhodl udělat. Lze je kategorizovat jako strategie (dlouhodobé) a taktiky (krátkodobé).">
+  <properties
+      key="Vrstva"
+      value="Strategická vrstva"/>
+</archimate:CourseOfAction>

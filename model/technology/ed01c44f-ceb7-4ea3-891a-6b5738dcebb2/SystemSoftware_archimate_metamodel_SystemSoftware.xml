@@ -1,0 +1,9 @@
+<archimate:SystemSoftware
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Systémový software (SystemSoftware)"
+    id="archimate_metamodel_SystemSoftware"
+    documentation="Softwarové prostředí pro speciální typ komponentů a objektů, které jsou na něm rozmístěny ve formě artefaktů.">
+  <properties
+      key="Vrstva"
+      value="Technologická vrstva"/>
+</archimate:SystemSoftware>

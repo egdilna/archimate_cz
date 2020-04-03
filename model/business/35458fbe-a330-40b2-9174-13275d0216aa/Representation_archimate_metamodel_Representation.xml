@@ -1,0 +1,9 @@
+<archimate:Representation
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Reprezentace (Representation)"
+    id="archimate_metamodel_Representation"
+    documentation="Smyslově vnímatelná forma informací spojených s byznys objektem. Tedy kupříkladu fyzický dokument, plastová kartička občanského průkazu apod.">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:Representation>

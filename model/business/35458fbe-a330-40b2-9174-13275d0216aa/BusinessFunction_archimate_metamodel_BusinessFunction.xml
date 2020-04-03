@@ -1,0 +1,9 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Funkce (byznysově) (BusinessFunction)"
+    id="archimate_metamodel_BusinessFunction"
+    documentation="Prvek chování, který seskupuje chování podle vybraná sady kritérií (typicky požadovaných dovedností, znalostí, zdrojů).">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:BusinessFunction>

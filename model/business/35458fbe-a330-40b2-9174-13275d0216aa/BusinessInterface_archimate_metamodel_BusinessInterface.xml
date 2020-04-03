@@ -1,0 +1,9 @@
+<archimate:BusinessInterface
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Rozhraní (BusinessInterface)"
+    id="archimate_metamodel_BusinessInterface"
+    documentation="Přístupový bod, kde je procesní služba dostupná okolnímu prostředí. Tedy kupříkladu terminál, uživatelské rozhraní, rozhraní služby, ale může to de facto být i formulář.">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:BusinessInterface>

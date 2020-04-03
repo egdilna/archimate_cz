@@ -1,0 +1,9 @@
+<archimate:BusinessService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Byznysová služba (BusinessService)"
+    id="archimate_metamodel_BusinessService"
+    documentation="Byznys služba je definována jako služba, která naplňuje potřeby zákazníka (interního nebo externího vůči poskytující organizaci).">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:BusinessService>

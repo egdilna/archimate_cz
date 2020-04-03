@@ -1,0 +1,9 @@
+<archimate:ApplicationInterface
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Rozhraní aplikace, Aplikační rozhraní (ApplicationInterface)"
+    id="archimate_metamodel_ApplicationInterface"
+    documentation="Přístupový bod, ve kterém je služba aplikace dostupná pro využití uživatelem nebo jinou komponentou aplikace.">
+  <properties
+      key="Vrstva"
+      value="Aplikační vrstva"/>
+</archimate:ApplicationInterface>

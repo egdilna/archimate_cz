@@ -1,0 +1,9 @@
+<archimate:BusinessEvent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Událost, procesní událost (BusinessEvent)"
+    id="archimate_metamodel_BusinessEvent"
+    documentation="Něco, co se stává (interně nebo externě) a ovlivňuje chování.">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:BusinessEvent>

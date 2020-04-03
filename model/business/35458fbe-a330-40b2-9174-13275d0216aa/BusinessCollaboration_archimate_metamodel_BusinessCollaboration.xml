@@ -1,0 +1,9 @@
+<archimate:BusinessCollaboration
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Spolupráce (BusinessCollaboration)"
+    id="archimate_metamodel_BusinessCollaboration"
+    documentation="Spojení dvou a více rolí pracující společně k vykonání určitého kolektivního chování. Nebo jiná spolupráce rolí.">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:BusinessCollaboration>

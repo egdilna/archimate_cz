@@ -1,0 +1,9 @@
+<archimate:Driver
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Motivátor (Driver)"
+    id="archimate_metamodel_Driver"
+    documentation="Motivátor je definován jako okolnost, která vytváří, motivuje a podporuje změnu v organizaci.">
+  <properties
+      key="Vrstva"
+      value="Motivační vrstva"/>
+</archimate:Driver>

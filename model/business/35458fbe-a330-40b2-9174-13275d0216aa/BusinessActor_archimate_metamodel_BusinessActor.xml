@@ -1,0 +1,9 @@
+<archimate:BusinessActor
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Aktér, Účastník (BusinessActor)"
+    id="archimate_metamodel_BusinessActor"
+    documentation="Aktér/Účastník je definován jako organizační jednotka schopna vykonávat aktivitu přiřazenou k jedné nebo více byznys rolím. Aktér je subjekt, může to být jedna organizace, organizační jednotka, OVM, nebo samozřejmě i osoba.">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:BusinessActor>

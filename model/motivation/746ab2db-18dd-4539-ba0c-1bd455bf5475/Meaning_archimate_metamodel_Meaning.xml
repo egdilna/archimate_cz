@@ -1,0 +1,9 @@
+<archimate:Meaning
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Význam (Meaning)"
+    id="archimate_metamodel_Meaning"
+    documentation="Znalost nebo odbornost přítomná v byznys objektu nebo v jeho reprezentaci">
+  <properties
+      key="Vrstva"
+      value="Motivační vrstva"/>
+</archimate:Meaning>

@@ -1,0 +1,9 @@
+<archimate:ValueStream
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Tok (ValueStream)"
+    id="archimate_metamodel_ValueStream"
+    documentation="Tok hodnot představuje sled činností, které vytvářejí celkový výsledek pro zákazníka, zúčastněné strany nebo koncového uživatele. Hodnotový tok popisuje, jak podnik organizuje své činnosti tak, aby vytvářel hodnotu. Proudy hodnot jsou obvykle realizovány podnikovými procesy, a případně dalšími klíčovými prvky chování. Proudy hodnot mohou být definovány na různých úrovních organizace, např. na úrovni podniku, obchodní jednotky nebo oddělení. Proudy hodnot mohou být složením nebo agregací činností s přidanou hodnotou. Tyto jsou také modelovány s prvkem hodnotového toku a jsou známé jako hodnotové (proudové) fáze, z nichž každá vytváří a přidává inkrementální hodnotu z jedné fáze do další. Tyto fáze jsou obvykle spojeny pomocí tokových vztahů k modelování toku hodnoty mezi nimi.">
+  <properties
+      key="Vrstva"
+      value="Strategická vrstva"/>
+</archimate:ValueStream>

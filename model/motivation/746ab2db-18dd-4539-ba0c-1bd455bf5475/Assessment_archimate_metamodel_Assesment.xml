@@ -1,0 +1,9 @@
+<archimate:Assessment
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Zhodnocení (Assesment)"
+    id="archimate_metamodel_Assesment"
+    documentation="Výsledek analýzy motivátoru. Zhodnucuje dopad motivátoru na organizaci a zhodnocuje výsledek analýzy nasazení změn pro splnění daného motivátoru.">
+  <properties
+      key="Vrstva"
+      value="Motivační vrstva"/>
+</archimate:Assessment>

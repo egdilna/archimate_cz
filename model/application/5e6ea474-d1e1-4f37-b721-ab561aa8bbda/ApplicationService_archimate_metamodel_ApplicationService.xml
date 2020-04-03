@@ -1,0 +1,9 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Aplikační služba (ApplicationService)"
+    id="archimate_metamodel_ApplicationService"
+    documentation="Služba, která poskytuje automatizované chování.">
+  <properties
+      key="Vrstva"
+      value="Aplikační vrstva"/>
+</archimate:ApplicationService>

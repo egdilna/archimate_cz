@@ -1,0 +1,9 @@
+<archimate:Plateau
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Stav architektury (Plateau)"
+    id="archimate_metamodel_Plateau"
+    documentation="Relativně stabilní stav architektury, která existuje (existovala) během omezeného časového období.">
+  <properties
+      key="Vrstva"
+      value="Implementační vrstva"/>
+</archimate:Plateau>

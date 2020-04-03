@@ -1,0 +1,9 @@
+<archimate:Value
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Hodnota (Value)"
+    id="archimate_metamodel_Value"
+    documentation="Hodnota představuje přínos, užitek nebo důležitost produktu či služby">
+  <properties
+      key="Vrstva"
+      value="Motivační vrstva"/>
+</archimate:Value>

@@ -1,0 +1,9 @@
+<archimate:Stakeholder
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Zainteresovaný subjekt (Stakeholder)"
+    id="archimate_metamodel_Stakeholder"
+    documentation="Zainteresovaný jedinec, tým nebo organizace, která má zájem na přínosu architektury.">
+  <properties
+      key="Vrstva"
+      value="Motivační vrstva"/>
+</archimate:Stakeholder>

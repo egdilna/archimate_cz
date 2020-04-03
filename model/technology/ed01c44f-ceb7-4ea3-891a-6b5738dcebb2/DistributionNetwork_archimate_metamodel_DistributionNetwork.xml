@@ -1,0 +1,9 @@
+<archimate:DistributionNetwork
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Síť (Network)"
+    id="archimate_metamodel_DistributionNetwork"
+    documentation="Komunikační medium mezi dvěma nebo více zařízeními.">
+  <properties
+      key="Vrstva"
+      value="Technologická vrstva"/>
+</archimate:DistributionNetwork>

@@ -1,0 +1,9 @@
+<archimate:Principle
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Princip (Principle)"
+    id="archimate_metamodel_Principle"
+    documentation="Normovaná vlastnost všech systémů v daném kontextu, nebo způsob jejich realizace. Principy vycházejí ze strategických cílů a svými důsledky formují a formulují architektonické požadavky.">
+  <properties
+      key="Vrstva"
+      value="Motivační vrstva"/>
+</archimate:Principle>

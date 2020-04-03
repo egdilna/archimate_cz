@@ -1,0 +1,9 @@
+<archimate:TechnologyService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Služby infrastruktury (TechnologyService)"
+    id="archimate_metamodel_TechnologyService"
+    documentation="Externě viditelná jednotka funkcionality poskytovaná jedním nebo více uzly, která je přístupná přes dobře definované rozhraní a má význam pro okolí.">
+  <properties
+      key="Vrstva"
+      value="Technologická vrstva"/>
+</archimate:TechnologyService>

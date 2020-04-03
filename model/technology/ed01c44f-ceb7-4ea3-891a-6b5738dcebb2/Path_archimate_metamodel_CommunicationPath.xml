@@ -1,0 +1,9 @@
+<archimate:Path
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Cesta (CommunicationPath)"
+    id="archimate_metamodel_CommunicationPath"
+    documentation="Spojení mezi dvěma nebo více uzly, skrze které si mohou tyto uzly vyměňovat data.">
+  <properties
+      key="Vrstva"
+      value="Technologická vrstva"/>
+</archimate:Path>

@@ -1,0 +1,9 @@
+<archimate:Capability
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Schopnost (Capability)"
+    id="archimate_metamodel_Capability"
+    documentation="Poskytuje pohled na vysoké úrovni o současných a požadovaných schopnostech organizace ve vztahu k její strategii a prostředí. Schopnost je ucelenou sadou dovedností, znalostí, potřeb, kontraktů, procesů, služeb a dalších objektů na všech úrovních, které dohromady dávají definovatelný celek.">
+  <properties
+      key="Vrstva"
+      value="Strategická vrstva"/>
+</archimate:Capability>

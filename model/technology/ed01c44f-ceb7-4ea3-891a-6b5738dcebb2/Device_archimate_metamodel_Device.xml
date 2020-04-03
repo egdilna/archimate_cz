@@ -1,0 +1,9 @@
+<archimate:Device
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Zařízení (Device)"
+    id="archimate_metamodel_Device"
+    documentation="Hardwarový zdroj, na kterém mohou být skladovány nebo dislokovány artefakty pro použití.">
+  <properties
+      key="Vrstva"
+      value="Technologická vrstva"/>
+</archimate:Device>

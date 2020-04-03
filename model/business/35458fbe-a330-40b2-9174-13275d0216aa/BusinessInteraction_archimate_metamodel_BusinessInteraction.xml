@@ -1,0 +1,9 @@
+<archimate:BusinessInteraction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Interakce (BusinessInteraction)"
+    id="archimate_metamodel_BusinessInteraction"
+    documentation="Prvek chování, který popisuje chování spolupráce.">
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
+</archimate:BusinessInteraction>

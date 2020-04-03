@@ -1,0 +1,9 @@
+<archimate:Deliverable
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Dodaný výstup (Deliverable)"
+    id="archimate_metamodel_Deliverable"
+    documentation="Přesně definovaný výsledek pracovního bloku.">
+  <properties
+      key="Vrstva"
+      value="Implementační vrstva"/>
+</archimate:Deliverable>

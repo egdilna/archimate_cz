@@ -1,0 +1,9 @@
+<archimate:Gap
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Rozdíl (Gap)"
+    id="archimate_metamodel_Gap"
+    documentation="Rozdíl je napojený na dva stavy architektury (např. výchozí a cílovou nebo dvě přechodové), a tudíž představuje znázornění rozdílů mezi těmito dvěma stavy architektury.">
+  <properties
+      key="Vrstva"
+      value="Implementační vrstva"/>
+</archimate:Gap>
