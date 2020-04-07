@@ -1,3 +1,20 @@
+---
+title: Český popis a zobrazení elementů jazyka Archimate
+layout: page
+order: 3
+date: 2020-04-06
+parent: Poznáváme jazyk Archimate (česky)
+---
+
+# Seznam a popis a zobrazení elementů jazyka Archimate
+
+- TOC
+{:toc}
+
+V tomto dokumentu najdete nejen přehledný popis všech důležitých elementů jazyka Archimate®, ale především zobrazení těchto elementů. Abyste dokázali přečíst jakýkoliv diagram v Archimate, musíte vědě nejen to, co element znamená a jaký je jeho význam a použití v architektuře, ale také to, jak vypadá graficky. Grafická prezentace objektů je totiž v Archimate velice důležitá.
+
+Na tomto místě získáte zcela ojedinělý přehled o tom, jak vypadá vše v Archimate.
+
 
 ## Přehled všech elementů podle vrstev
 
