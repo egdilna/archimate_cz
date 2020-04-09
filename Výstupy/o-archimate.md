@@ -1,7 +1,7 @@
 ---
 title: Nejprve něco o jazyce Archimate
 layout: page
-order: 2
+nav_order: 2
 date: 2020-04-09
 parent: Poznáváme jazyk Archimate (česky)
 ---
