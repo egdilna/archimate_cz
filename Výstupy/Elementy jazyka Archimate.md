@@ -2,7 +2,7 @@
 title: Český popis a zobrazení elementů jazyka Archimate
 layout: page
 order: 3
-date: 2020-04-06
+date: 2020-04-09
 parent: Poznáváme jazyk Archimate (česky)
 ---
 
@@ -86,6 +86,8 @@ Elementy jsou zobrazováni v pohledech, tedy obrázkových diagramech. Aby i neo
 
 ### Klíčové elementy Archimate na strategické vrstvě
 
+Od strategie se vše odvíjí. Strategie je základ pro jakékoliv konání, včetně popisu a změn v architektuře. Pro strategii jsou důležité schopnosti a zdroje, nicméně samotná strategie je základem pro další vrstvy. Proto je také vždy na prvním místě.
+
 ![Diagram Zobrazení Archimate elementů (strategická vrstva)](zobrazeni_archimate_elementu_strategicka_vrstva.png)
 
 | Element | Popis |
@@ -97,6 +99,8 @@ Elementy jsou zobrazováni v pohledech, tedy obrázkových diagramech. Aby i neo
 
 
 ### Klíčové elementy Archimate na byznysové vrstvě
+
+V této vrstvě se popisuje vše, co děláme, protože vše, co činíme, je součástí našeho byznysu. Ať už se opravdu jedná o byznys jako obchod, nebo o naplnění našeho poslání, na této vrstvě musíme vyjádřit, co vlastně děláme, kdo to dělá, jak to dělá a s kým či pro koho to dělá. Byznys je uváděn hned pod strategií, protože je to prostě náš byznys.
 
 ![Diagram Zobrazení Archimate elementů (byznysová vrstva)](zobrazeni_archimate_elementu_byznysova_vrstva.png)
 
@@ -120,6 +124,8 @@ Elementy jsou zobrazováni v pohledech, tedy obrázkových diagramech. Aby i neo
 
 ### Klíčové elementy Archimate na aplikační vrstvě
 
+Na této vrstvě popisujeme aplikace, programy, data, výměnu dat, a vše co zajistí, že byznys budeme schopni s pomocí ICT opravdu dělat. A to včetně technických dat a databází a systémů, které pro nás zajišťují fungování onoho byznysu v praxi.
+
 ![Diagram Zobrazení Archimate elementů (aplikační vrstva)](zobrazeni_archimate_elementu_aplikacni_vrstva.png)
 
 | Element | Popis |
@@ -135,6 +141,8 @@ Elementy jsou zobrazováni v pohledech, tedy obrázkových diagramech. Aby i neo
 
 
 ### Klíčové elementy Archimate na technologické vrstvě
+
+Někdy označovaná i jako infrastrukturní. Jedná se o vrstvu všech technologických prostředků a zařízení, které potřebujeme k tomu, aby nám fungovaly aplikace a systémy a data, a tedy abychom s technickou pomocí mohli dělat byznys a plnit naši strategii. Místy je dost problematické odlišovat aplikační a technologickou vrstvu a jednotlivé elementy (zejména softwarové) se často zaměňují.
 
 ![Diagram Zobrazení Archimate elementů (technologická vrstva)](zobrazeni_archimate_elementu_technologicka_vrstva.png)
 
@@ -152,6 +160,8 @@ Elementy jsou zobrazováni v pohledech, tedy obrázkových diagramech. Aby i neo
 
 
 ### Klíčové elementy Archimate na motivační vrstvě
+
+Motivační vrstva ukazuje to, co motivuje či donucuje ke změnám v byznysu a v architektuře. Tedy motivací může být nějaký požadavek, externí vliv, zvýšení poptávky či cíl zvýšení kvality, nebo nějaké nové omezení způsobené změnou legislativy apod. V motivační vrstvě najdeme také trochu nelogicky reprezentaci požadavků, včetně požadavků na byznys a aplikace a technologie.
 
 ![Diagram Zobrazení Archimate elementů (motivační vrstva)](zobrazeni_archimate_elementu_motivacni_vrstva.png)
 
@@ -173,6 +183,8 @@ Elementy jsou zobrazováni v pohledech, tedy obrázkových diagramech. Aby i neo
 
 
 ### Klíčové elementy Archimate na implementační vrstvě
+
+Na této vrstvě se řeší změna určitého stavu ze současného (as-is) do budoucího chtěného (to-be) a to, co se musí pro tuto změnu udělat. Tedy implementace nového byznysu, implementace nových aplikací či jejich změn apod. 
 
 ![Diagram Zobrazení Archimate elementů (implementační vrstva)](zobrazeni_archimate_elementu_implementacni_vrstva.png)
 
