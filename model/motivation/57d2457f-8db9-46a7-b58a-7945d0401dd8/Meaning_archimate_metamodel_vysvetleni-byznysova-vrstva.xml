@@ -1,0 +1,5 @@
+<archimate:Meaning
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Byznysová vrstva architektury"
+    id="archimate_metamodel_vysvetleni-byznysova-vrstva"
+    documentation="V této vrstvě se popisuje vše, co děláme, protože vše, co činíme, je součástí našeho byznysu. Ať už se opravdu jedná o byznys jako obchod, nebo o naplnění našeho poslání, na této vrstvě musíme vyjádřit, co vlastně děláme, kdo to dělá, jak to dělá a s kým či pro koho to dělá. Byznys je uváděn hned pod strategií, protože je to prostě náš byznys."/>

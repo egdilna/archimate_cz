@@ -1,0 +1,5 @@
+<archimate:Meaning
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Aplikační vrstva architektury"
+    id="archimate_metamodel_vysvetleni-aplikacni-vrstva"
+    documentation="Na této vrstvě popisujeme aplikace, programy, data, výměnu dat, a vše co zajistí, že byznys budeme schopni s pomocí ICT opravdu dělat. A to včetně technických dat a databází a systémů, které pro nás zajišťují fungování onoho byznysu v praxi."/>

@@ -1,0 +1,5 @@
+<archimate:Meaning
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Motivační vrstva architektury"
+    id="archimate_metamodel_vysvetleni-motivacni-vrstva"
+    documentation="Motivační vrstva ukazuje to, co motivuje či donucuje ke změnám v byznysu a v architektuře. Tedy motivací může být nějaký požadavek, externí vliv, zvýšení poptávky či cíl zvýšení kvality, nebo nějaké nové omezení způsobené změnou legislativy apod. V motivační vrstvě najdeme také trochu nelogicky reprezentaci požadavků, včetně požadavků na byznys a aplikace a technologie."/>

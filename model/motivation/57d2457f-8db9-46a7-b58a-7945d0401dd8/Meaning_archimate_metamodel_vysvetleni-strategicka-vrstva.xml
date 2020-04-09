@@ -1,0 +1,5 @@
+<archimate:Meaning
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Strategická vrstva architektury"
+    id="archimate_metamodel_vysvetleni-strategicka-vrstva"
+    documentation="Od strategie se vše odvíjí. Strategie je základ pro jakékoliv konání, včetně popisu a změn v architektuře. Pro strategii jsou důležité schopnosti a zdroje, nicméně samotná strategie je základem pro další vrstvy. Proto je také vždy na prvním místě."/>
