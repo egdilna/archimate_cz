@@ -1,7 +1,7 @@
 ---
 title: Český popis a zobrazení elementů jazyka Archimate
 layout: page
-order: 3
+nav_order: 3
 date: 2020-04-09
 parent: Poznáváme jazyk Archimate (česky)
 ---
