@@ -1,0 +1,5 @@
+<archimate:Meaning
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Implementační vrstva architektury"
+    id="archimate_metamodel_vysvetleni-implementacni-vrstva"
+    documentation="Na této vrstvě se řeší změna určitého stavu ze současného (as-is) do budoucího chtěného (to-be) a to, co se musí pro tuto změnu udělat. Tedy implementace nového byznysu, implementace nových aplikací či jejich změn apod. "/>

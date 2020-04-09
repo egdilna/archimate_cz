@@ -1,0 +1,5 @@
+<archimate:Meaning
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Technologická vrstva architektury"
+    id="archimate_metamodel_vysvetleni-technologicka-vrstva"
+    documentation="Někdy označovaná i jako infrastrukturní. Jedná se o vrstvu všech technologických prostředků a zařízení, které potřebujeme k tomu, aby nám fungovaly aplikace a systémy a data, a tedy abychom s technickou pomocí mohli dělat byznys a plnit naši strategii. Místy je dost problematické odlišovat aplikační a technologickou vrstvu a jednotlivé elementy (zejména softwarové) se často zaměňují."/>
