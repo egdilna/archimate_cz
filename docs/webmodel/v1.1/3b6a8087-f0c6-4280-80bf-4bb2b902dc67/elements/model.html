@@ -1,0 +1,459 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Archimate elementy (Česká verze) v1.1</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Archimate elementy (&#268;esk&#225; verze) v1.1</b>
+
+            <!-- If a View with Viewpoint -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-purpose"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab" class="i18n-query"></a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">&#268;esk&#225; verze element&#367; a popis&#367; jazyka archimate. Je sou&#269;&#225;st&#237; u&#269;ebn&#237;ch text&#367; pro archimate - v r&#225;mci projektu #openczeg (c) 2020 Michal Rada a Opensource aliance</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="query">
+						<br>
+						<style>
+						#myprompt {
+						    width: 80%;
+						    font-family: Consolas,Monaco, monospace;
+						}
+						</style>
+
+						<div id='myconsole'></div>
+
+						<p>
+							<tt><span id="useid">alasql</span> &gt;</tt> <input id='myprompt' autofocus/> 
+						</p>
+
+						<script src='../../lib/alasql/alasql.min.js'></script>
+
+						<script>
+							function decodeURL(s) {
+								return decodeURIComponent(s.replace(/\+/g, "%20"));
+							}
+
+							var first = decodeURI(location.search.substr(1));
+						 	alasql.options.logtarget = 'myconsole';
+							alasql.prompt('myprompt','useid');
+							alasql.prompt('myprompt','useid', first);
+
+							var dataElements = [ ];	  
+						  	var dataProperties = [ ];
+						 	var dataRelationships = [ ];
+						 	var dataViews = [ ];
+						 	var dataViewsContent = [ ];
+						 	var dataFolders = [ ];
+						 	var dataFoldersContent = [ ];
+
+							dataFolders.push({id:"3b6a8087-f0c6-4280-80bf-4bb2b902dc67", type:"DBArchimateModel", name:decodeURL("Archimate+elementy+%28%C4%8Cesk%C3%A1+verze%29+v1.1"), documentation:decodeURL("")});
+								dataFoldersContent.push({folderid:"3b6a8087-f0c6-4280-80bf-4bb2b902dc67", contentid:"5dbb010a-22e8-4163-9c22-270e536d25e2", contenttype:"Folder"});
+								dataFolders.push({id:"5dbb010a-22e8-4163-9c22-270e536d25e2", type:"Folder", name:decodeURL("Strategy"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"5dbb010a-22e8-4163-9c22-270e536d25e2", contentid:"ce7deaff-cd79-46e2-88b6-291281fd8848", contenttype:"Folder"});
+									dataFolders.push({id:"ce7deaff-cd79-46e2-88b6-291281fd8848", type:"Folder", name:decodeURL("Archimate+elementy+%28strategick%C3%A1+vrstva%29"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"ce7deaff-cd79-46e2-88b6-291281fd8848", contentid:"archimate_metamodel_Capability", contenttype:"Capability"});
+											dataElements.push({id:"archimate_metamodel_Capability", type:"Capability", name:decodeURL("Schopnost+%28Capability%29"), documentation:decodeURL("Poskytuje+pohled+na+vysok%C3%A9+%C3%BArovni+o+sou%C4%8Dasn%C3%BDch+a+po%C5%BEadovan%C3%BDch+schopnostech+organizace+ve+vztahu+k+jej%C3%AD+strategii+a+prost%C5%99ed%C3%AD.+Schopnost+je+ucelenou+sadou+dovednost%C3%AD%2C+znalost%C3%AD%2C+pot%C5%99eb%2C+kontrakt%C5%AF%2C+proces%C5%AF%2C+slu%C5%BEeb+a+dal%C5%A1%C3%ADch+objekt%C5%AF+na+v%C5%A1ech+%C3%BArovn%C3%ADch%2C+kter%C3%A9+dohromady+d%C3%A1vaj%C3%AD+definovateln%C3%BD+celek.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Capability", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Strategick%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"ce7deaff-cd79-46e2-88b6-291281fd8848", contentid:"archimate_metamodel_CourseOfAction", contenttype:"CourseOfAction"});
+											dataElements.push({id:"archimate_metamodel_CourseOfAction", type:"CourseOfAction", name:decodeURL("Prov%C3%A1d%C4%9Bc%C3%AD+postup+%28CourseOfAction%29"), documentation:decodeURL("Prov%C3%A1d%C4%9Bc%C3%AD+postup+je+p%C5%99%C3%ADstup+nebo+pl%C3%A1n+pro+konfiguraci+n%C4%9Bkter%C3%BDch+schopnost%C3%AD+a+zdroj%C5%AF+podniku%2C+prov%C3%A1d%C4%9Bn%C3%BDch+za+%C3%BA%C4%8Delem+dosa%C5%BEen%C3%AD+c%C3%ADle.+Prov%C3%A1d%C4%9Bc%C3%AD+postup+p%C5%99edstavuje+to%2C+co+se+podnik+rozhodl+ud%C4%9Blat.+Lze+je+kategorizovat+jako+strategie+%28dlouhodob%C3%A9%29+a+taktiky+%28kr%C3%A1tkodob%C3%A9%29.")});
+														dataProperties.push({conceptid:"archimate_metamodel_CourseOfAction", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Strategick%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"ce7deaff-cd79-46e2-88b6-291281fd8848", contentid:"archimate_metamodel_Resource", contenttype:"Resource"});
+											dataElements.push({id:"archimate_metamodel_Resource", type:"Resource", name:decodeURL("Zdroj+%28Resource%29"), documentation:decodeURL("P%C5%99edstavuje+definovateln%C3%BD+zdroj%2C+kter%C3%BD+je+za+pot%C5%99eb%C3%AD+m%C3%ADt+k+doda%C5%BEen%C3%AD+strategie+a+kter%C3%BD+se+vyu%C5%BEije+pro+realizaci+strategi%C3%AD%2C+byznysu+a+proces%C5%AF.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Resource", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Strategick%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"ce7deaff-cd79-46e2-88b6-291281fd8848", contentid:"archimate_metamodel_ValueStream", contenttype:"ValueStream"});
+											dataElements.push({id:"archimate_metamodel_ValueStream", type:"ValueStream", name:decodeURL("Tok+%28ValueStream%29"), documentation:decodeURL("Tok+hodnot+p%C5%99edstavuje+sled+%C4%8Dinnost%C3%AD%2C+kter%C3%A9+vytv%C3%A1%C5%99ej%C3%AD+celkov%C3%BD+v%C3%BDsledek+pro+z%C3%A1kazn%C3%ADka%2C+z%C3%BA%C4%8Dastn%C4%9Bn%C3%A9+strany+nebo+koncov%C3%A9ho+u%C5%BEivatele.+Hodnotov%C3%BD+tok+popisuje%2C+jak+podnik+organizuje+sv%C3%A9+%C4%8Dinnosti+tak%2C+aby+vytv%C3%A1%C5%99el+hodnotu.+Proudy+hodnot+jsou+obvykle+realizov%C3%A1ny+podnikov%C3%BDmi+procesy%2C+a+p%C5%99%C3%ADpadn%C4%9B+dal%C5%A1%C3%ADmi+kl%C3%AD%C4%8Dov%C3%BDmi+prvky+chov%C3%A1n%C3%AD.+Proudy+hodnot+mohou+b%C3%BDt+definov%C3%A1ny+na+r%C5%AFzn%C3%BDch+%C3%BArovn%C3%ADch+organizace%2C+nap%C5%99.+na+%C3%BArovni+podniku%2C+obchodn%C3%AD+jednotky+nebo+odd%C4%9Blen%C3%AD.+Proudy+hodnot+mohou+b%C3%BDt+slo%C5%BEen%C3%ADm+nebo+agregac%C3%AD+%C4%8Dinnost%C3%AD+s+p%C5%99idanou+hodnotou.+Tyto+jsou+tak%C3%A9+modelov%C3%A1ny+s+prvkem+hodnotov%C3%A9ho+toku+a+jsou+zn%C3%A1m%C3%A9+jako+hodnotov%C3%A9+%28proudov%C3%A9%29+f%C3%A1ze%2C+z+nich%C5%BE+ka%C5%BEd%C3%A1+vytv%C3%A1%C5%99%C3%AD+a+p%C5%99id%C3%A1v%C3%A1+inkrement%C3%A1ln%C3%AD+hodnotu+z+jedn%C3%A9+f%C3%A1ze+do+dal%C5%A1%C3%AD.+Tyto+f%C3%A1ze+jsou+obvykle+spojeny+pomoc%C3%AD+tokov%C3%BDch+vztah%C5%AF+k+modelov%C3%A1n%C3%AD+toku+hodnoty+mezi+nimi.")});
+														dataProperties.push({conceptid:"archimate_metamodel_ValueStream", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Strategick%C3%A1+vrstva")});
+
+
+
+
+								dataFoldersContent.push({folderid:"3b6a8087-f0c6-4280-80bf-4bb2b902dc67", contentid:"a5ac1634-e838-4712-bdcd-70ba084e9b62", contenttype:"Folder"});
+								dataFolders.push({id:"a5ac1634-e838-4712-bdcd-70ba084e9b62", type:"Folder", name:decodeURL("Business"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"a5ac1634-e838-4712-bdcd-70ba084e9b62", contentid:"35458fbe-a330-40b2-9174-13275d0216aa", contenttype:"Folder"});
+									dataFolders.push({id:"35458fbe-a330-40b2-9174-13275d0216aa", type:"Folder", name:decodeURL("Archimate+elementy+%28byznysov%C3%A1+vrstva%29"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_BusinessActor", contenttype:"BusinessActor"});
+											dataElements.push({id:"archimate_metamodel_BusinessActor", type:"BusinessActor", name:decodeURL("Akt%C3%A9r%2C+%C3%9A%C4%8Dastn%C3%ADk+%28BusinessActor%29"), documentation:decodeURL("Akt%C3%A9r%2F%C3%9A%C4%8Dastn%C3%ADk+je+definov%C3%A1n+jako+organiza%C4%8Dn%C3%AD+jednotka+schopna+vykon%C3%A1vat+aktivitu+p%C5%99i%C5%99azenou+k+jedn%C3%A9+nebo+v%C3%ADce+byznys+rol%C3%ADm.+Akt%C3%A9r+je+subjekt%2C+m%C5%AF%C5%BEe+to+b%C3%BDt+jedna+organizace%2C+organiza%C4%8Dn%C3%AD+jednotka%2C+OVM%2C+nebo+samoz%C5%99ejm%C4%9B+i+osoba.")});
+														dataProperties.push({conceptid:"archimate_metamodel_BusinessActor", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_BusinessCollaboration", contenttype:"BusinessCollaboration"});
+											dataElements.push({id:"archimate_metamodel_BusinessCollaboration", type:"BusinessCollaboration", name:decodeURL("Spolupr%C3%A1ce+%28BusinessCollaboration%29"), documentation:decodeURL("Spojen%C3%AD+dvou+a+v%C3%ADce+rol%C3%AD+pracuj%C3%ADc%C3%AD+spole%C4%8Dn%C4%9B+k+vykon%C3%A1n%C3%AD+ur%C4%8Dit%C3%A9ho+kolektivn%C3%ADho+chov%C3%A1n%C3%AD.+Nebo+jin%C3%A1+spolupr%C3%A1ce+rol%C3%AD.")});
+														dataProperties.push({conceptid:"archimate_metamodel_BusinessCollaboration", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_BusinessEvent", contenttype:"BusinessEvent"});
+											dataElements.push({id:"archimate_metamodel_BusinessEvent", type:"BusinessEvent", name:decodeURL("Ud%C3%A1lost%2C+procesn%C3%AD+ud%C3%A1lost+%28BusinessEvent%29"), documentation:decodeURL("N%C4%9Bco%2C+co+se+st%C3%A1v%C3%A1+%28intern%C4%9B+nebo+extern%C4%9B%29+a+ovliv%C5%88uje+chov%C3%A1n%C3%AD.")});
+														dataProperties.push({conceptid:"archimate_metamodel_BusinessEvent", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_BusinessFunction", contenttype:"BusinessFunction"});
+											dataElements.push({id:"archimate_metamodel_BusinessFunction", type:"BusinessFunction", name:decodeURL("Funkce+%28byznysov%C4%9B%29+%28BusinessFunction%29"), documentation:decodeURL("Prvek+chov%C3%A1n%C3%AD%2C+kter%C3%BD+seskupuje+chov%C3%A1n%C3%AD+podle+vybran%C3%A1+sady+krit%C3%A9ri%C3%AD+%28typicky+po%C5%BEadovan%C3%BDch+dovednost%C3%AD%2C+znalost%C3%AD%2C+zdroj%C5%AF%29.")});
+														dataProperties.push({conceptid:"archimate_metamodel_BusinessFunction", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_BusinessInteraction", contenttype:"BusinessInteraction"});
+											dataElements.push({id:"archimate_metamodel_BusinessInteraction", type:"BusinessInteraction", name:decodeURL("Interakce+%28BusinessInteraction%29"), documentation:decodeURL("Prvek+chov%C3%A1n%C3%AD%2C+kter%C3%BD+popisuje+chov%C3%A1n%C3%AD+spolupr%C3%A1ce.")});
+														dataProperties.push({conceptid:"archimate_metamodel_BusinessInteraction", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_BusinessInterface", contenttype:"BusinessInterface"});
+											dataElements.push({id:"archimate_metamodel_BusinessInterface", type:"BusinessInterface", name:decodeURL("Rozhran%C3%AD+%28BusinessInterface%29"), documentation:decodeURL("P%C5%99%C3%ADstupov%C3%BD+bod%2C+kde+je+procesn%C3%AD+slu%C5%BEba+dostupn%C3%A1+okoln%C3%ADmu+prost%C5%99ed%C3%AD.+Tedy+kup%C5%99%C3%ADkladu+termin%C3%A1l%2C+u%C5%BEivatelsk%C3%A9+rozhran%C3%AD%2C+rozhran%C3%AD+slu%C5%BEby%2C+ale+m%C5%AF%C5%BEe+to+de+facto+b%C3%BDt+i+formul%C3%A1%C5%99.")});
+														dataProperties.push({conceptid:"archimate_metamodel_BusinessInterface", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_BusinessObject", contenttype:"BusinessObject"});
+											dataElements.push({id:"archimate_metamodel_BusinessObject", type:"BusinessObject", name:decodeURL("Objekt+%28BusinessObject%29"), documentation:decodeURL("Pasivn%C3%AD+element%2C+kter%C3%BD+m%C3%A1+relevanci+z+p%C5%99edm%C4%9Btn%C3%A9ho+pohledu.+Jedn%C3%A1+se+o+fyzick%C3%BD+%C4%8Di+logick%C3%BD+objekt%2C+o+n%C4%9Bm%C5%BE+se+vykon%C3%A1v%C3%A1+proces+%C4%8Di+slu%C5%BEba.+Dokument%2C+doklad%2C+%C5%BE%C3%A1dost%2C+d%C3%A1vka%2C+rozhodnut%C3%AD%2C+prakticky+cokoliv%2C+co+se+d%C3%A1+fyzicky+%C4%8Di+logicky+reprezentovat.")});
+														dataProperties.push({conceptid:"archimate_metamodel_BusinessObject", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_BusinessProcess", contenttype:"BusinessProcess"});
+											dataElements.push({id:"archimate_metamodel_BusinessProcess", type:"BusinessProcess", name:decodeURL("Proces+%28BusinessProcess%29"), documentation:decodeURL("Prvek+chov%C3%A1n%C3%AD%2C+kter%C3%BD+sdru%C5%BEuje+skupiny+chov%C3%A1n%C3%AD+na+z%C3%A1klad%C4%9B+po%C5%99ad%C3%AD+%C4%8Dinnost%C3%AD.+Je+ur%C4%8Den+k+produkov%C3%A1n%C3%AD+sady+produkt%C5%AF+nebo+byznys+slu%C5%BEeb.")});
+														dataProperties.push({conceptid:"archimate_metamodel_BusinessProcess", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_BusinessRole", contenttype:"BusinessRole"});
+											dataElements.push({id:"archimate_metamodel_BusinessRole", type:"BusinessRole", name:decodeURL("Role+%28BusinessRole%29"), documentation:decodeURL("Role+je+fakticky+zodpov%C4%9Bdnost+za+vykon%C3%A1v%C3%A1n%C3%AD+specifick%C3%A9ho+chov%C3%A1n%C3%AD%2C+ke+kter%C3%A9+m%C5%AF%C5%BEe+b%C3%BDt+p%C5%99i%C5%99azen+%C3%BA%C4%8Dastn%C3%ADk+procesu.")});
+														dataProperties.push({conceptid:"archimate_metamodel_BusinessRole", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_BusinessService", contenttype:"BusinessService"});
+											dataElements.push({id:"archimate_metamodel_BusinessService", type:"BusinessService", name:decodeURL("Byznysov%C3%A1+slu%C5%BEba+%28BusinessService%29"), documentation:decodeURL("Byznys+slu%C5%BEba+je+definov%C3%A1na+jako+slu%C5%BEba%2C+kter%C3%A1+napl%C5%88uje+pot%C5%99eby+z%C3%A1kazn%C3%ADka+%28intern%C3%ADho+nebo+extern%C3%ADho+v%C5%AF%C4%8Di+poskytuj%C3%ADc%C3%AD+organizaci%29.")});
+														dataProperties.push({conceptid:"archimate_metamodel_BusinessService", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_Contract", contenttype:"Contract"});
+											dataElements.push({id:"archimate_metamodel_Contract", type:"Contract", name:decodeURL("Kontrakt%2C+p%C5%99edpis+%28Contract%29"), documentation:decodeURL("Form%C3%A1ln%C3%AD+nebo+neform%C3%A1ln%C3%AD+specifikace+dohody%2C+kter%C3%A1+specifikuje+pr%C3%A1va+a+povinnosti+spojen%C3%A9+s+produktem.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Contract", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_Product", contenttype:"Product"});
+											dataElements.push({id:"archimate_metamodel_Product", type:"Product", name:decodeURL("Produkt+%28Product%29"), documentation:decodeURL("Produkt+je+soubor+slu%C5%BEeb+definovan%C3%BDch+kontraktem+%28z%C3%A1konem%29%2C+kter%C3%A9+jsou+spole%C4%8Dn%C4%9B+poskytov%C3%A1ny+klientovi+%28pro+jeho+%C5%BEivotn%C3%AD+situaci%29.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Product", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"35458fbe-a330-40b2-9174-13275d0216aa", contentid:"archimate_metamodel_Representation", contenttype:"Representation"});
+											dataElements.push({id:"archimate_metamodel_Representation", type:"Representation", name:decodeURL("Reprezentace+%28Representation%29"), documentation:decodeURL("Smyslov%C4%9B+vn%C3%ADmateln%C3%A1+forma+informac%C3%AD+spojen%C3%BDch+s+byznys+objektem.+Tedy+kup%C5%99%C3%ADkladu+fyzick%C3%BD+dokument%2C+plastov%C3%A1+karti%C4%8Dka+ob%C4%8Dansk%C3%A9ho+pr%C5%AFkazu+apod.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Representation", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Byznysov%C3%A1+vrstva")});
+
+
+
+
+								dataFoldersContent.push({folderid:"3b6a8087-f0c6-4280-80bf-4bb2b902dc67", contentid:"fe8fa25d-218c-43bc-a45b-cdafd830c14f", contenttype:"Folder"});
+								dataFolders.push({id:"fe8fa25d-218c-43bc-a45b-cdafd830c14f", type:"Folder", name:decodeURL("Application"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"fe8fa25d-218c-43bc-a45b-cdafd830c14f", contentid:"5e6ea474-d1e1-4f37-b721-ab561aa8bbda", contenttype:"Folder"});
+									dataFolders.push({id:"5e6ea474-d1e1-4f37-b721-ab561aa8bbda", type:"Folder", name:decodeURL("Archimate+elementy+%28aplika%C4%8Dn%C3%AD+vrstva%29"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"5e6ea474-d1e1-4f37-b721-ab561aa8bbda", contentid:"archimate_metamodel_ApplicationCollaboration", contenttype:"ApplicationCollaboration"});
+											dataElements.push({id:"archimate_metamodel_ApplicationCollaboration", type:"ApplicationCollaboration", name:decodeURL("Aplika%C4%8Dn%C3%AD+spolupr%C3%A1ce+%28ApplicationCollaboration%29"), documentation:decodeURL("Souhrn+dvou+nebo+v%C3%ADce+komponent+aplikac%C3%AD%2C+kter%C3%A9+pracuj%C3%AD+spole%C4%8Dn%C4%9B+za+%C3%BA%C4%8Delem+vykon%C3%A1n%C3%AD+kolektivn%C3%ADho+chov%C3%A1n%C3%AD")});
+														dataProperties.push({conceptid:"archimate_metamodel_ApplicationCollaboration", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Aplika%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"5e6ea474-d1e1-4f37-b721-ab561aa8bbda", contentid:"archimate_metamodel_ApplicationComponent", contenttype:"ApplicationComponent"});
+											dataElements.push({id:"archimate_metamodel_ApplicationComponent", type:"ApplicationComponent", name:decodeURL("Aplikace%2C+Syst%C3%A9m%2C+Komponenta+aplikace%2C+Modul%2C+%C4%8C%C3%A1st+aplikace+%28ApplicationComponent%29"), documentation:decodeURL("Modul%C3%A1rn%C3%AD%2C+nasaditeln%C3%A1+a+nahraditeln%C3%A1+%C4%8D%C3%A1st+softwarov%C3%A9ho+syst%C3%A9mu%2C+zapouzd%C5%99uj%C3%ADc%C3%AD+sv%C3%A9+chov%C3%A1n%C3%AD+a+data%2C+kter%C3%A1+poskytuje+skrz+sadu+rozhran%C3%AD.+M%C5%AF%C5%BEe+se+jednat+o+cel%C3%BD+logick%C3%BD+informa%C4%8Dn%C3%AD+syst%C3%A9m%2C+o+n%C4%9Bjakou+ucelenou+komponentu+nebo+modul%2C+nebo+o+%C4%8D%C3%A1st+aplikace%2C+je%C5%BE+se+nasazuje+a+rozv%C3%ADj%C3%AD+jako+%C4%8D%C3%A1st+celku.")});
+														dataProperties.push({conceptid:"archimate_metamodel_ApplicationComponent", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Aplika%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"5e6ea474-d1e1-4f37-b721-ab561aa8bbda", contentid:"archimate_metamodel_ApplicationFunction", contenttype:"ApplicationFunction"});
+											dataElements.push({id:"archimate_metamodel_ApplicationFunction", type:"ApplicationFunction", name:decodeURL("Aplika%C4%8Dn%C3%AD+funkce+%28ApplicationFunction%29"), documentation:decodeURL("Aplika%C4%8Dn%C3%AD+funkce+je+definov%C3%A1na+jako+intern%C3%AD+chov%C3%A1n%C3%AD+jedn%C3%A9+aplika%C4%8Dn%C3%AD+komponenty.")});
+														dataProperties.push({conceptid:"archimate_metamodel_ApplicationFunction", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Aplika%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"5e6ea474-d1e1-4f37-b721-ab561aa8bbda", contentid:"archimate_metamodel_ApplicationInteraction", contenttype:"ApplicationInteraction"});
+											dataElements.push({id:"archimate_metamodel_ApplicationInteraction", type:"ApplicationInteraction", name:decodeURL("Interakce+aplikace+%28ApplicationInteraction%29"), documentation:decodeURL("Prvek+chov%C3%A1n%C3%AD%2C+kter%C3%BD+popisuje+chov%C3%A1n%C3%AD+aplikac%C3%AD+p%C5%99i+jejich+kooperaci.")});
+														dataProperties.push({conceptid:"archimate_metamodel_ApplicationInteraction", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Aplika%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"5e6ea474-d1e1-4f37-b721-ab561aa8bbda", contentid:"archimate_metamodel_ApplicationInterface", contenttype:"ApplicationInterface"});
+											dataElements.push({id:"archimate_metamodel_ApplicationInterface", type:"ApplicationInterface", name:decodeURL("Rozhran%C3%AD+aplikace%2C+Aplika%C4%8Dn%C3%AD+rozhran%C3%AD+%28ApplicationInterface%29"), documentation:decodeURL("P%C5%99%C3%ADstupov%C3%BD+bod%2C+ve+kter%C3%A9m+je+slu%C5%BEba+aplikace+dostupn%C3%A1+pro+vyu%C5%BEit%C3%AD+u%C5%BEivatelem+nebo+jinou+komponentou+aplikace.")});
+														dataProperties.push({conceptid:"archimate_metamodel_ApplicationInterface", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Aplika%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"5e6ea474-d1e1-4f37-b721-ab561aa8bbda", contentid:"archimate_metamodel_ApplicationService", contenttype:"ApplicationService"});
+											dataElements.push({id:"archimate_metamodel_ApplicationService", type:"ApplicationService", name:decodeURL("Aplika%C4%8Dn%C3%AD+slu%C5%BEba+%28ApplicationService%29"), documentation:decodeURL("Slu%C5%BEba%2C+kter%C3%A1+poskytuje+automatizovan%C3%A9+chov%C3%A1n%C3%AD.")});
+														dataProperties.push({conceptid:"archimate_metamodel_ApplicationService", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Aplika%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"5e6ea474-d1e1-4f37-b721-ab561aa8bbda", contentid:"archimate_metamodel_DataObject", contenttype:"DataObject"});
+											dataElements.push({id:"archimate_metamodel_DataObject", type:"DataObject", name:decodeURL("Datov%C3%BD+objekt+%28DataObject%29"), documentation:decodeURL("Pasivn%C3%AD+element%2C+kter%C3%BD+je+zpracov%C3%A1v%C3%A1n+za+pou%C5%BEit%C3%AD+v%C3%BDpo%C4%8Detn%C3%AD+techniky.+Jedn%C3%A1+se+o+data%2C+soubor+dat+nebo+%C3%BAdaj%C5%AF%2C+kter%C3%A9+jsou+zpracov%C3%A1v%C3%A1ny+v%C4%9Bt%C5%A1inou+v+r%C3%A1mci+aplika%C4%8Dn%C3%AD+komponenty.")});
+														dataProperties.push({conceptid:"archimate_metamodel_DataObject", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Aplika%C4%8Dn%C3%AD+vrstva")});
+
+
+
+
+								dataFoldersContent.push({folderid:"3b6a8087-f0c6-4280-80bf-4bb2b902dc67", contentid:"d998c45f-4cec-4c56-bee5-4691e09b19c1", contenttype:"Folder"});
+								dataFolders.push({id:"d998c45f-4cec-4c56-bee5-4691e09b19c1", type:"Folder", name:decodeURL("Technology+%26+Physical"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"d998c45f-4cec-4c56-bee5-4691e09b19c1", contentid:"ed01c44f-ceb7-4ea3-891a-6b5738dcebb2", contenttype:"Folder"});
+									dataFolders.push({id:"ed01c44f-ceb7-4ea3-891a-6b5738dcebb2", type:"Folder", name:decodeURL("Archimate+elementy+%28technologick%C3%A1+vrstva%29"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"ed01c44f-ceb7-4ea3-891a-6b5738dcebb2", contentid:"archimate_metamodel_Artifact", contenttype:"Artifact"});
+											dataElements.push({id:"archimate_metamodel_Artifact", type:"Artifact", name:decodeURL("Artefakt+%28Artifact%29"), documentation:decodeURL("Artefaktem+se+rozum%C3%AD+fyzick%C3%A1+reprezentace+dat%2C+kter%C3%A1+je+pou%C5%BE%C3%ADv%C3%A1na+%C4%8Di+vytv%C3%A1%C5%99ena+syst%C3%A9mem.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Artifact", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Technologick%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"ed01c44f-ceb7-4ea3-891a-6b5738dcebb2", contentid:"archimate_metamodel_Device", contenttype:"Device"});
+											dataElements.push({id:"archimate_metamodel_Device", type:"Device", name:decodeURL("Za%C5%99%C3%ADzen%C3%AD+%28Device%29"), documentation:decodeURL("Hardwarov%C3%BD+zdroj%2C+na+kter%C3%A9m+mohou+b%C3%BDt+skladov%C3%A1ny+nebo+dislokov%C3%A1ny+artefakty+pro+pou%C5%BEit%C3%AD.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Device", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Technologick%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"ed01c44f-ceb7-4ea3-891a-6b5738dcebb2", contentid:"archimate_metamodel_DistributionNetwork", contenttype:"DistributionNetwork"});
+											dataElements.push({id:"archimate_metamodel_DistributionNetwork", type:"DistributionNetwork", name:decodeURL("S%C3%AD%C5%A5+%28Network%29"), documentation:decodeURL("Komunika%C4%8Dn%C3%AD+medium+mezi+dv%C4%9Bma+nebo+v%C3%ADce+za%C5%99%C3%ADzen%C3%ADmi.")});
+														dataProperties.push({conceptid:"archimate_metamodel_DistributionNetwork", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Technologick%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"ed01c44f-ceb7-4ea3-891a-6b5738dcebb2", contentid:"archimate_metamodel_Node", contenttype:"Node"});
+											dataElements.push({id:"archimate_metamodel_Node", type:"Node", name:decodeURL("Uzel+%28Node%29"), documentation:decodeURL("V%C3%BDpo%C4%8Detn%C3%AD+zdroj%2C+na+kter%C3%A9m+mohou+b%C3%BDt+skladov%C3%A1ny%2C+dislokov%C3%A1ny+nebo+zpracov%C3%A1v%C3%A1ny+artefakty+pro+pou%C5%BEit%C3%AD.+Poskytuje+p%C5%99edev%C5%A1%C3%ADm+slu%C5%BEby+v%C3%BDpo%C4%8Detn%C3%ADho+v%C3%BDkonu+a+datov%C3%BDch+kapacit.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Node", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Technologick%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"ed01c44f-ceb7-4ea3-891a-6b5738dcebb2", contentid:"archimate_metamodel_CommunicationPath", contenttype:"Path"});
+											dataElements.push({id:"archimate_metamodel_CommunicationPath", type:"Path", name:decodeURL("Cesta+%28CommunicationPath%29"), documentation:decodeURL("Spojen%C3%AD+mezi+dv%C4%9Bma+nebo+v%C3%ADce+uzly%2C+skrze+kter%C3%A9+si+mohou+tyto+uzly+vym%C4%9B%C5%88ovat+data.")});
+														dataProperties.push({conceptid:"archimate_metamodel_CommunicationPath", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Technologick%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"ed01c44f-ceb7-4ea3-891a-6b5738dcebb2", contentid:"archimate_metamodel_SystemSoftware", contenttype:"SystemSoftware"});
+											dataElements.push({id:"archimate_metamodel_SystemSoftware", type:"SystemSoftware", name:decodeURL("Syst%C3%A9mov%C3%BD+software+%28SystemSoftware%29"), documentation:decodeURL("Softwarov%C3%A9+prost%C5%99ed%C3%AD+pro+speci%C3%A1ln%C3%AD+typ+komponent%C5%AF+a+objekt%C5%AF%2C+kter%C3%A9+jsou+na+n%C4%9Bm+rozm%C3%ADst%C4%9Bny+ve+form%C4%9B+artefakt%C5%AF.")});
+														dataProperties.push({conceptid:"archimate_metamodel_SystemSoftware", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Technologick%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"ed01c44f-ceb7-4ea3-891a-6b5738dcebb2", contentid:"archimate_metamodel_TechnologyInterface", contenttype:"TechnologyInterface"});
+											dataElements.push({id:"archimate_metamodel_TechnologyInterface", type:"TechnologyInterface", name:decodeURL("Rozhran%C3%AD+infrastruktury+%28TechnologyInterface%29"), documentation:decodeURL("P%C5%99%C3%ADstupov%C3%BD+bod%2C+kde+slu%C5%BEby+infrastruktury+nab%C3%ADzen%C3%A9+uzlem+mohou+b%C3%BDt+vyu%C5%BEity+jin%C3%BDm+uzlem+nebo+komponentou+aplikace.")});
+														dataProperties.push({conceptid:"archimate_metamodel_TechnologyInterface", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Technologick%C3%A1+vrstva")});
+
+										dataFoldersContent.push({folderid:"ed01c44f-ceb7-4ea3-891a-6b5738dcebb2", contentid:"archimate_metamodel_TechnologyService", contenttype:"TechnologyService"});
+											dataElements.push({id:"archimate_metamodel_TechnologyService", type:"TechnologyService", name:decodeURL("Slu%C5%BEby+infrastruktury+%28TechnologyService%29"), documentation:decodeURL("Extern%C4%9B+viditeln%C3%A1+jednotka+funkcionality+poskytovan%C3%A1+jedn%C3%ADm+nebo+v%C3%ADce+uzly%2C+kter%C3%A1+je+p%C5%99%C3%ADstupn%C3%A1+p%C5%99es+dob%C5%99e+definovan%C3%A9+rozhran%C3%AD+a+m%C3%A1+v%C3%BDznam+pro+okol%C3%AD.")});
+														dataProperties.push({conceptid:"archimate_metamodel_TechnologyService", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Technologick%C3%A1+vrstva")});
+
+
+
+
+								dataFoldersContent.push({folderid:"3b6a8087-f0c6-4280-80bf-4bb2b902dc67", contentid:"86bfb246-2944-4515-9a7e-0eaea13674f0", contenttype:"Folder"});
+								dataFolders.push({id:"86bfb246-2944-4515-9a7e-0eaea13674f0", type:"Folder", name:decodeURL("Motivation"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"86bfb246-2944-4515-9a7e-0eaea13674f0", contentid:"57d2457f-8db9-46a7-b58a-7945d0401dd8", contenttype:"Folder"});
+									dataFolders.push({id:"57d2457f-8db9-46a7-b58a-7945d0401dd8", type:"Folder", name:decodeURL("Vysv%C4%9Btlen%C3%AD+k+Archimate"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"57d2457f-8db9-46a7-b58a-7945d0401dd8", contentid:"archimate_metamodel_vysvetleni-aplikacni-vrstva", contenttype:"Meaning"});
+											dataElements.push({id:"archimate_metamodel_vysvetleni-aplikacni-vrstva", type:"Meaning", name:decodeURL("Aplika%C4%8Dn%C3%AD+vrstva+architektury"), documentation:decodeURL("Na+t%C3%A9to+vrstv%C4%9B+popisujeme+aplikace%2C+programy%2C+data%2C+v%C3%BDm%C4%9Bnu+dat%2C+a+v%C5%A1e+co+zajist%C3%AD%2C+%C5%BEe+byznys+budeme+schopni+s+pomoc%C3%AD+ICT+opravdu+d%C4%9Blat.+A+to+v%C4%8Detn%C4%9B+technick%C3%BDch+dat+a+datab%C3%A1z%C3%AD+a+syst%C3%A9m%C5%AF%2C+kter%C3%A9+pro+n%C3%A1s+zaji%C5%A1%C5%A5uj%C3%AD+fungov%C3%A1n%C3%AD+onoho+byznysu+v+praxi.")});
+										dataFoldersContent.push({folderid:"57d2457f-8db9-46a7-b58a-7945d0401dd8", contentid:"archimate_metamodel_vysvetleni-byznysova-vrstva", contenttype:"Meaning"});
+											dataElements.push({id:"archimate_metamodel_vysvetleni-byznysova-vrstva", type:"Meaning", name:decodeURL("Byznysov%C3%A1+vrstva+architektury"), documentation:decodeURL("V+t%C3%A9to+vrstv%C4%9B+se+popisuje+v%C5%A1e%2C+co+d%C4%9Bl%C3%A1me%2C+proto%C5%BEe+v%C5%A1e%2C+co+%C4%8Din%C3%ADme%2C+je+sou%C4%8D%C3%A1st%C3%AD+na%C5%A1eho+byznysu.+A%C5%A5+u%C5%BE+se+opravdu+jedn%C3%A1+o+byznys+jako+obchod%2C+nebo+o+napln%C4%9Bn%C3%AD+na%C5%A1eho+posl%C3%A1n%C3%AD%2C+na+t%C3%A9to+vrstv%C4%9B+mus%C3%ADme+vyj%C3%A1d%C5%99it%2C+co+vlastn%C4%9B+d%C4%9Bl%C3%A1me%2C+kdo+to+d%C4%9Bl%C3%A1%2C+jak+to+d%C4%9Bl%C3%A1+a+s+k%C3%BDm+%C4%8Di+pro+koho+to+d%C4%9Bl%C3%A1.+Byznys+je+uv%C3%A1d%C4%9Bn+hned+pod+strategi%C3%AD%2C+proto%C5%BEe+je+to+prost%C4%9B+n%C3%A1%C5%A1+byznys.")});
+										dataFoldersContent.push({folderid:"57d2457f-8db9-46a7-b58a-7945d0401dd8", contentid:"archimate_metamodel_vysvetleni-implementacni-vrstva", contenttype:"Meaning"});
+											dataElements.push({id:"archimate_metamodel_vysvetleni-implementacni-vrstva", type:"Meaning", name:decodeURL("Implementa%C4%8Dn%C3%AD+vrstva+architektury"), documentation:decodeURL("Na+t%C3%A9to+vrstv%C4%9B+se+%C5%99e%C5%A1%C3%AD+zm%C4%9Bna+ur%C4%8Dit%C3%A9ho+stavu+ze+sou%C4%8Dasn%C3%A9ho+%28as-is%29+do+budouc%C3%ADho+cht%C4%9Bn%C3%A9ho+%28to-be%29+a+to%2C+co+se+mus%C3%AD+pro+tuto+zm%C4%9Bnu+ud%C4%9Blat.+Tedy+implementace+nov%C3%A9ho+byznysu%2C+implementace+nov%C3%BDch+aplikac%C3%AD+%C4%8Di+jejich+zm%C4%9Bn+apod.+")});
+										dataFoldersContent.push({folderid:"57d2457f-8db9-46a7-b58a-7945d0401dd8", contentid:"archimate_metamodel_vysvetleni-motivacni-vrstva", contenttype:"Meaning"});
+											dataElements.push({id:"archimate_metamodel_vysvetleni-motivacni-vrstva", type:"Meaning", name:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva+architektury"), documentation:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva+ukazuje+to%2C+co+motivuje+%C4%8Di+donucuje+ke+zm%C4%9Bn%C3%A1m+v+byznysu+a+v+architektu%C5%99e.+Tedy+motivac%C3%AD+m%C5%AF%C5%BEe+b%C3%BDt+n%C4%9Bjak%C3%BD+po%C5%BEadavek%2C+extern%C3%AD+vliv%2C+zv%C3%BD%C5%A1en%C3%AD+popt%C3%A1vky+%C4%8Di+c%C3%ADl+zv%C3%BD%C5%A1en%C3%AD+kvality%2C+nebo+n%C4%9Bjak%C3%A9+nov%C3%A9+omezen%C3%AD+zp%C5%AFsoben%C3%A9+zm%C4%9Bnou+legislativy+apod.+V+motiva%C4%8Dn%C3%AD+vrstv%C4%9B+najdeme+tak%C3%A9+trochu+nelogicky+reprezentaci+po%C5%BEadavk%C5%AF%2C+v%C4%8Detn%C4%9B+po%C5%BEadavk%C5%AF+na+byznys+a+aplikace+a+technologie.")});
+										dataFoldersContent.push({folderid:"57d2457f-8db9-46a7-b58a-7945d0401dd8", contentid:"archimate_metamodel_vysvetleni-strategicka-vrstva", contenttype:"Meaning"});
+											dataElements.push({id:"archimate_metamodel_vysvetleni-strategicka-vrstva", type:"Meaning", name:decodeURL("Strategick%C3%A1+vrstva+architektury"), documentation:decodeURL("Od+strategie+se+v%C5%A1e+odv%C3%ADj%C3%AD.+Strategie+je+z%C3%A1klad+pro+jak%C3%A9koliv+kon%C3%A1n%C3%AD%2C+v%C4%8Detn%C4%9B+popisu+a+zm%C4%9Bn+v+architektu%C5%99e.+Pro+strategii+jsou+d%C5%AFle%C5%BEit%C3%A9+schopnosti+a+zdroje%2C+nicm%C3%A9n%C4%9B+samotn%C3%A1+strategie+je+z%C3%A1kladem+pro+dal%C5%A1%C3%AD+vrstvy.+Proto+je+tak%C3%A9+v%C5%BEdy+na+prvn%C3%ADm+m%C3%ADst%C4%9B.")});
+										dataFoldersContent.push({folderid:"57d2457f-8db9-46a7-b58a-7945d0401dd8", contentid:"archimate_metamodel_vysvetleni-technologicka-vrstva", contenttype:"Meaning"});
+											dataElements.push({id:"archimate_metamodel_vysvetleni-technologicka-vrstva", type:"Meaning", name:decodeURL("Technologick%C3%A1+vrstva+architektury"), documentation:decodeURL("N%C4%9Bkdy+ozna%C4%8Dovan%C3%A1+i+jako+infrastrukturn%C3%AD.+Jedn%C3%A1+se+o+vrstvu+v%C5%A1ech+technologick%C3%BDch+prost%C5%99edk%C5%AF+a+za%C5%99%C3%ADzen%C3%AD%2C+kter%C3%A9+pot%C5%99ebujeme+k+tomu%2C+aby+n%C3%A1m+fungovaly+aplikace+a+syst%C3%A9my+a+data%2C+a+tedy+abychom+s+technickou+pomoc%C3%AD+mohli+d%C4%9Blat+byznys+a+plnit+na%C5%A1i+strategii.+M%C3%ADsty+je+dost+problematick%C3%A9+odli%C5%A1ovat+aplika%C4%8Dn%C3%AD+a+technologickou+vrstvu+a+jednotliv%C3%A9+elementy+%28zejm%C3%A9na+softwarov%C3%A9%29+se+%C4%8Dasto+zam%C4%9B%C5%88uj%C3%AD.")});
+
+									dataFoldersContent.push({folderid:"86bfb246-2944-4515-9a7e-0eaea13674f0", contentid:"746ab2db-18dd-4539-ba0c-1bd455bf5475", contenttype:"Folder"});
+									dataFolders.push({id:"746ab2db-18dd-4539-ba0c-1bd455bf5475", type:"Folder", name:decodeURL("Archimate+elementy+%28motiva%C4%8Dn%C3%AD+vrstva%29"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"746ab2db-18dd-4539-ba0c-1bd455bf5475", contentid:"archimate_metamodel_Assesment", contenttype:"Assessment"});
+											dataElements.push({id:"archimate_metamodel_Assesment", type:"Assessment", name:decodeURL("Zhodnocen%C3%AD+%28Assesment%29"), documentation:decodeURL("V%C3%BDsledek+anal%C3%BDzy+motiv%C3%A1toru.+Zhodnucuje+dopad+motiv%C3%A1toru+na+organizaci+a+zhodnocuje+v%C3%BDsledek+anal%C3%BDzy+nasazen%C3%AD+zm%C4%9Bn+pro+spln%C4%9Bn%C3%AD+dan%C3%A9ho+motiv%C3%A1toru.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Assesment", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"746ab2db-18dd-4539-ba0c-1bd455bf5475", contentid:"archimate_metamodel_Constraint", contenttype:"Constraint"});
+											dataElements.push({id:"archimate_metamodel_Constraint", type:"Constraint", name:decodeURL("Omezen%C3%AD+%28Constraint%29"), documentation:decodeURL("Omezen%C3%AD+na+cest%C4%9B+k+realizaci+syst%C3%A9mu.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Constraint", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"746ab2db-18dd-4539-ba0c-1bd455bf5475", contentid:"archimate_metamodel_Driver", contenttype:"Driver"});
+											dataElements.push({id:"archimate_metamodel_Driver", type:"Driver", name:decodeURL("Motiv%C3%A1tor+%28Driver%29"), documentation:decodeURL("Motiv%C3%A1tor+je+definov%C3%A1n+jako+okolnost%2C+kter%C3%A1+vytv%C3%A1%C5%99%C3%AD%2C+motivuje+a+podporuje+zm%C4%9Bnu+v+organizaci.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Driver", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"746ab2db-18dd-4539-ba0c-1bd455bf5475", contentid:"archimate_metamodel_Goal", contenttype:"Goal"});
+											dataElements.push({id:"archimate_metamodel_Goal", type:"Goal", name:decodeURL("C%C3%ADl+%28Goal%29"), documentation:decodeURL("Koncov%C3%BD+stav%2C+kter%C3%A9ho+chce+zainteresovan%C3%BD+subjekt+%28stakeholder%29+dos%C3%A1hnout.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Goal", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"746ab2db-18dd-4539-ba0c-1bd455bf5475", contentid:"archimate_metamodel_Meaning", contenttype:"Meaning"});
+											dataElements.push({id:"archimate_metamodel_Meaning", type:"Meaning", name:decodeURL("V%C3%BDznam+%28Meaning%29"), documentation:decodeURL("Znalost+nebo+odbornost+p%C5%99%C3%ADtomn%C3%A1+v+byznys+objektu+nebo+v+jeho+reprezentaci")});
+														dataProperties.push({conceptid:"archimate_metamodel_Meaning", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"746ab2db-18dd-4539-ba0c-1bd455bf5475", contentid:"archimate_metamodel_Outcome", contenttype:"Outcome"});
+											dataElements.push({id:"archimate_metamodel_Outcome", type:"Outcome", name:decodeURL("V%C3%BDstup+%28Outcome%29"), documentation:decodeURL("Reprezentuje+jednozna%C4%8Dn%C3%BD+v%C3%BDstup%2C+zejm%C3%A9na+jako+v%C3%BDsledek+schopnost%C3%AD+organizace+%C4%8Di+v%C3%BDsledek+obchodn%C3%ADho+sna%C5%BEen%C3%AD+nebo+realizace+strategie.+V%C3%BDstup+je+bu%C4%8F+hmatateln%C3%BD+na+%C3%BArovni+dovednosti+vytv%C3%A1%C5%99et+produkt%2C+nebo+se+jedn%C3%A1+o+v%C3%BDstup+je%C5%BE+se+pozitivn%C4%9B+odr%C3%A1%C5%BE%C3%AD+na+podnik%C3%A1n%C3%AD+%C4%8Di+%C4%8Dinnosti+organizace.+Jednou+z+motivac%C3%AD+pro+zlep%C5%A1en%C3%AD+organizace+je+tedy+dovednost+u%C4%8Dinit+v%C3%BDstup.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Outcome", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"746ab2db-18dd-4539-ba0c-1bd455bf5475", contentid:"archimate_metamodel_Principle", contenttype:"Principle"});
+											dataElements.push({id:"archimate_metamodel_Principle", type:"Principle", name:decodeURL("Princip+%28Principle%29"), documentation:decodeURL("Normovan%C3%A1+vlastnost+v%C5%A1ech+syst%C3%A9m%C5%AF+v+dan%C3%A9m+kontextu%2C+nebo+zp%C5%AFsob+jejich+realizace.+Principy+vych%C3%A1zej%C3%AD+ze+strategick%C3%BDch+c%C3%ADl%C5%AF+a+sv%C3%BDmi+d%C5%AFsledky+formuj%C3%AD+a+formuluj%C3%AD+architektonick%C3%A9+po%C5%BEadavky.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Principle", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"746ab2db-18dd-4539-ba0c-1bd455bf5475", contentid:"archimate_metamodel_Requirement", contenttype:"Requirement"});
+											dataElements.push({id:"archimate_metamodel_Requirement", type:"Requirement", name:decodeURL("Po%C5%BEadavek+%28Requirement%29"), documentation:decodeURL("Stanovisko%2C+form%C3%A1ln%C4%9B+vyj%C3%A1d%C5%99en%C3%A1+pot%C5%99eba%2C+kter%C3%A1+mus%C3%AD+b%C3%BDt+v+syst%C3%A9mu+%28resp.+architekturou%29+realizov%C3%A1na.+Jedn%C3%A1+se+o+architektonick%C3%A9+nikoli+byznysov%C3%A9+po%C5%BEadavky.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Requirement", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"746ab2db-18dd-4539-ba0c-1bd455bf5475", contentid:"archimate_metamodel_Stakeholder", contenttype:"Stakeholder"});
+											dataElements.push({id:"archimate_metamodel_Stakeholder", type:"Stakeholder", name:decodeURL("Zainteresovan%C3%BD+subjekt+%28Stakeholder%29"), documentation:decodeURL("Zainteresovan%C3%BD+jedinec%2C+t%C3%BDm+nebo+organizace%2C+kter%C3%A1+m%C3%A1+z%C3%A1jem+na+p%C5%99%C3%ADnosu+architektury.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Stakeholder", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"746ab2db-18dd-4539-ba0c-1bd455bf5475", contentid:"archimate_metamodel_Value", contenttype:"Value"});
+											dataElements.push({id:"archimate_metamodel_Value", type:"Value", name:decodeURL("Hodnota+%28Value%29"), documentation:decodeURL("Hodnota+p%C5%99edstavuje+p%C5%99%C3%ADnos%2C+u%C5%BEitek+nebo+d%C5%AFle%C5%BEitost+produktu+%C4%8Di+slu%C5%BEby")});
+														dataProperties.push({conceptid:"archimate_metamodel_Value", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Motiva%C4%8Dn%C3%AD+vrstva")});
+
+
+
+
+								dataFoldersContent.push({folderid:"3b6a8087-f0c6-4280-80bf-4bb2b902dc67", contentid:"6b7c98a9-9efe-4b6c-ab93-0f62c355da90", contenttype:"Folder"});
+								dataFolders.push({id:"6b7c98a9-9efe-4b6c-ab93-0f62c355da90", type:"Folder", name:decodeURL("Implementation+%26+Migration"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"6b7c98a9-9efe-4b6c-ab93-0f62c355da90", contentid:"7cbe5772-95e4-4a04-9ddb-50b5012c2d88", contenttype:"Folder"});
+									dataFolders.push({id:"7cbe5772-95e4-4a04-9ddb-50b5012c2d88", type:"Folder", name:decodeURL("Archimate+elementy+%28implementa%C4%8Dn%C3%AD+vrstva%29"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"7cbe5772-95e4-4a04-9ddb-50b5012c2d88", contentid:"archimate_metamodel_Deliverable", contenttype:"Deliverable"});
+											dataElements.push({id:"archimate_metamodel_Deliverable", type:"Deliverable", name:decodeURL("Dodan%C3%BD+v%C3%BDstup+%28Deliverable%29"), documentation:decodeURL("P%C5%99esn%C4%9B+definovan%C3%BD+v%C3%BDsledek+pracovn%C3%ADho+bloku.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Deliverable", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Implementa%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"7cbe5772-95e4-4a04-9ddb-50b5012c2d88", contentid:"archimate_metamodel_Gap", contenttype:"Gap"});
+											dataElements.push({id:"archimate_metamodel_Gap", type:"Gap", name:decodeURL("Rozd%C3%ADl+%28Gap%29"), documentation:decodeURL("Rozd%C3%ADl+je+napojen%C3%BD+na+dva+stavy+architektury+%28nap%C5%99.+v%C3%BDchoz%C3%AD+a+c%C3%ADlovou+nebo+dv%C4%9B+p%C5%99echodov%C3%A9%29%2C+a+tud%C3%AD%C5%BE+p%C5%99edstavuje+zn%C3%A1zorn%C4%9Bn%C3%AD+rozd%C3%ADl%C5%AF+mezi+t%C4%9Bmito+dv%C4%9Bma+stavy+architektury.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Gap", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Implementa%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"7cbe5772-95e4-4a04-9ddb-50b5012c2d88", contentid:"archimate_metamodel_Plateau", contenttype:"Plateau"});
+											dataElements.push({id:"archimate_metamodel_Plateau", type:"Plateau", name:decodeURL("Stav+architektury+%28Plateau%29"), documentation:decodeURL("Relativn%C4%9B+stabiln%C3%AD+stav+architektury%2C+kter%C3%A1+existuje+%28existovala%29+b%C4%9Bhem+omezen%C3%A9ho+%C4%8Dasov%C3%A9ho+obdob%C3%AD.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Plateau", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Implementa%C4%8Dn%C3%AD+vrstva")});
+
+										dataFoldersContent.push({folderid:"7cbe5772-95e4-4a04-9ddb-50b5012c2d88", contentid:"archimate_metamodel_WorkPackage", contenttype:"WorkPackage"});
+											dataElements.push({id:"archimate_metamodel_WorkPackage", type:"WorkPackage", name:decodeURL("Pracovn%C3%AD+blok+%28WorkPackage%29"), documentation:decodeURL("S%C3%A9rie+akc%C3%AD+navr%C5%BEen%C3%A1+tak%2C+aby+dos%C3%A1hla+vyty%C4%8Den%C3%A9ho+c%C3%ADle+ve+specifikovan%C3%A9m+%C4%8Dase.")});
+														dataProperties.push({conceptid:"archimate_metamodel_WorkPackage", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Implementa%C4%8Dn%C3%AD+vrstva")});
+
+
+
+
+								dataFoldersContent.push({folderid:"3b6a8087-f0c6-4280-80bf-4bb2b902dc67", contentid:"0b5fc7ff-2df3-4601-8955-bb06c9218e53", contenttype:"Folder"});
+								dataFolders.push({id:"0b5fc7ff-2df3-4601-8955-bb06c9218e53", type:"Folder", name:decodeURL("Other"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"0b5fc7ff-2df3-4601-8955-bb06c9218e53", contentid:"de29327f-b6f7-4ca4-b2f8-ec75d6c3e4a6", contenttype:"Folder"});
+									dataFolders.push({id:"de29327f-b6f7-4ca4-b2f8-ec75d6c3e4a6", type:"Folder", name:decodeURL("Archimate+elementy+%28ostatn%C3%AD%29"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"de29327f-b6f7-4ca4-b2f8-ec75d6c3e4a6", contentid:"archimate_metamodel_Junction", contenttype:"Junction"});
+											dataElements.push({id:"archimate_metamodel_Junction", type:"Junction", name:decodeURL("Spojen%C3%AD+%28Junction%29"), documentation:decodeURL("Spojen%C3%AD+slou%C5%BE%C3%AD+k+vyj%C3%A1d%C5%99en%C3%AD+toho%2C+%C5%BEe+se+na+n%C4%9Bjak%C3%A9m+vztahu+pod%C3%ADl%C3%AD+v%C3%ADce+prvk%C5%AF.+M%C5%AF%C5%BEe+se+jednat+o+v%C3%ADce+prvk%C5%AF+na+vstupu+a+jedin%C3%BD+na+v%C3%BDstupu%2C+o+jeden+na+vstupu+a+v%C3%ADce+na+v%C3%BDstupu+a+nebo+o+v%C3%ADce+prvk%C5%AF+na+obou+stran%C3%A1ch.+Slou%C5%BE%C3%AD+k+vyj%C3%A1d%C5%99en%C3%AD%2C+%C5%BEe+pro+realizaci+dan%C3%A9ho+vztahu+je+nutno+po%C4%8D%C3%ADtat+se+zapojen%C3%ADm+v%C3%ADce+element%C5%AF.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Junction", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Ostatn%C3%AD")});
+
+										dataFoldersContent.push({folderid:"de29327f-b6f7-4ca4-b2f8-ec75d6c3e4a6", contentid:"archimate_metamodel_Location", contenttype:"Location"});
+											dataElements.push({id:"archimate_metamodel_Location", type:"Location", name:decodeURL("Lokalita%2C+m%C3%ADsto+%28Location%29"), documentation:decodeURL("M%C3%ADsto+v+prostoru%2C+kde+se+nach%C3%A1zej%C3%AD+akt%C3%A9%C5%99i+nebo+kde+je+vykon%C3%A1v%C3%A1no+chov%C3%A1n%C3%AD.")});
+														dataProperties.push({conceptid:"archimate_metamodel_Location", propkey:decodeURL("Vrstva"), propvalue:decodeURL("Ostatn%C3%AD")});
+
+
+
+
+								dataFoldersContent.push({folderid:"3b6a8087-f0c6-4280-80bf-4bb2b902dc67", contentid:"7aa1e5bc-444a-48eb-9835-f86a7e54bd4d", contenttype:"Folder"});
+								dataFolders.push({id:"7aa1e5bc-444a-48eb-9835-f86a7e54bd4d", type:"Folder", name:decodeURL("Relations"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"3b6a8087-f0c6-4280-80bf-4bb2b902dc67", contentid:"33a98bda-419f-4dd8-9f8c-1cddfe3c6806", contenttype:"Folder"});
+								dataFolders.push({id:"33a98bda-419f-4dd8-9f8c-1cddfe3c6806", type:"Folder", name:decodeURL("Views"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"33a98bda-419f-4dd8-9f8c-1cddfe3c6806", contentid:"4cad66a2-c71c-46bf-be1a-c55570e93799", contenttype:"Folder"});
+									dataFolders.push({id:"4cad66a2-c71c-46bf-be1a-c55570e93799", type:"Folder", name:decodeURL("Uk%C3%A1zky+zobrazen%C3%AD+element%C5%AF+Archimate"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"4cad66a2-c71c-46bf-be1a-c55570e93799", contentid:"33cd6855-a12f-4ace-a352-38eec51f1cb2", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"33cd6855-a12f-4ace-a352-38eec51f1cb2", type:"ArchimateDiagramModel", name:decodeURL("Zobrazen%C3%AD+Archimate+element%C5%AF+%28technologick%C3%A1+vrstva%29"), documentation:decodeURL("")});
+													dataViewsContent.push({viewid:"33cd6855-a12f-4ace-a352-38eec51f1cb2", contentid:"6c318e83-484f-4af0-a87f-b9ab63438f1d", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"33cd6855-a12f-4ace-a352-38eec51f1cb2", contentid:"aad04948-cb99-4d42-925f-a2ffae1d002c", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"33cd6855-a12f-4ace-a352-38eec51f1cb2", contentid:"fc6398af-298f-43ec-9943-8a31be03b121", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"33cd6855-a12f-4ace-a352-38eec51f1cb2", contentid:"36fdde14-245d-4d3f-ba61-d27066214e6c", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"33cd6855-a12f-4ace-a352-38eec51f1cb2", contentid:"f6598b3e-f916-49a4-b97a-4870d793e4e4", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"33cd6855-a12f-4ace-a352-38eec51f1cb2", contentid:"4acd3d4e-f935-4f13-a7d2-8da1700e079c", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"33cd6855-a12f-4ace-a352-38eec51f1cb2", contentid:"18614747-08ad-4601-8744-741ccbb02d36", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"33cd6855-a12f-4ace-a352-38eec51f1cb2", contentid:"1939a844-e9f3-48b5-903c-170768d2dea8", contenttype:"DiagramModelArchimateObject"});
+
+										dataFoldersContent.push({folderid:"4cad66a2-c71c-46bf-be1a-c55570e93799", contentid:"5ed3e880-eb7e-4361-97ee-08320e6d03db", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"5ed3e880-eb7e-4361-97ee-08320e6d03db", type:"ArchimateDiagramModel", name:decodeURL("Zobrazen%C3%AD+Archimate+element%C5%AF+%28aplika%C4%8Dn%C3%AD+vrstva%29"), documentation:decodeURL("")});
+													dataViewsContent.push({viewid:"5ed3e880-eb7e-4361-97ee-08320e6d03db", contentid:"001ff18f-68dc-4581-a721-788b22018ced", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"5ed3e880-eb7e-4361-97ee-08320e6d03db", contentid:"9f291e22-056c-4f79-a5a2-573e8b66d704", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"5ed3e880-eb7e-4361-97ee-08320e6d03db", contentid:"32456615-d33a-4be9-89f9-222811da6e25", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"5ed3e880-eb7e-4361-97ee-08320e6d03db", contentid:"894e7c8a-9c2b-4d2c-ba29-f9e861ec455d", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"5ed3e880-eb7e-4361-97ee-08320e6d03db", contentid:"fc775aeb-467a-433b-a92a-65c1d7860ba1", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"5ed3e880-eb7e-4361-97ee-08320e6d03db", contentid:"1d5eec76-ff68-4c90-85f3-385c73dbdac9", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"5ed3e880-eb7e-4361-97ee-08320e6d03db", contentid:"c815e340-8528-4d73-9eeb-41731c6810ab", contenttype:"DiagramModelArchimateObject"});
+
+										dataFoldersContent.push({folderid:"4cad66a2-c71c-46bf-be1a-c55570e93799", contentid:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", type:"ArchimateDiagramModel", name:decodeURL("Zobrazen%C3%AD+Archimate+element%C5%AF+%28motiva%C4%8Dn%C3%AD+vrstva%29"), documentation:decodeURL("")});
+													dataViewsContent.push({viewid:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", contentid:"174ba46e-a36d-4be0-bb09-d5ad0da75543", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", contentid:"bd10dc3c-8c8d-4bc0-990d-00cb54e75527", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", contentid:"5b5989b7-e924-4469-aa68-9ce3507021f6", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", contentid:"cb512f99-b87d-4ef8-998a-cad4059697e6", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", contentid:"87e5e84e-5321-4c2d-9b59-c96d85d6085f", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", contentid:"f2877855-a6cc-4a0b-bdd4-f2cd380399f1", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", contentid:"1238ae8b-791c-485b-8dd6-69af519516fe", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", contentid:"3cee21d8-a77d-4559-9b0e-6725ff9d4768", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", contentid:"d3dcd237-9cec-4fe0-8ed5-8d4f4d4c953c", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"7bc5be48-0ac7-4aa7-8047-c7fd3ef83927", contentid:"269da806-7f37-42b9-8cf2-f913614bc736", contenttype:"DiagramModelArchimateObject"});
+
+										dataFoldersContent.push({folderid:"4cad66a2-c71c-46bf-be1a-c55570e93799", contentid:"a764e5c1-855b-45c6-8c61-025124253692", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"a764e5c1-855b-45c6-8c61-025124253692", type:"ArchimateDiagramModel", name:decodeURL("Zobrazen%C3%AD+Archimate+element%C5%AF+%28implementa%C4%8Dn%C3%AD+vrstva%29"), documentation:decodeURL("")});
+													dataViewsContent.push({viewid:"a764e5c1-855b-45c6-8c61-025124253692", contentid:"006950a8-c886-450b-8aa8-5b6e91181f36", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"a764e5c1-855b-45c6-8c61-025124253692", contentid:"07227af8-aae8-4df0-a11b-d9d5463693d4", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"a764e5c1-855b-45c6-8c61-025124253692", contentid:"8ab26ae9-59e1-467b-850b-ee60c86400af", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"a764e5c1-855b-45c6-8c61-025124253692", contentid:"81153444-3337-4a41-9780-4742a06e6bfa", contenttype:"DiagramModelArchimateObject"});
+
+										dataFoldersContent.push({folderid:"4cad66a2-c71c-46bf-be1a-c55570e93799", contentid:"cbbcaf1d-6377-497a-8cf2-071875b4626a", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"cbbcaf1d-6377-497a-8cf2-071875b4626a", type:"ArchimateDiagramModel", name:decodeURL("Zobrazen%C3%AD+Archimate+element%C5%AF+%28ostatn%C3%AD%29"), documentation:decodeURL("")});
+													dataViewsContent.push({viewid:"cbbcaf1d-6377-497a-8cf2-071875b4626a", contentid:"01b2f5bd-168d-43db-a1be-aa90e482b3e0", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"cbbcaf1d-6377-497a-8cf2-071875b4626a", contentid:"ae183d44-ddb6-492a-87a9-0ec9d92a9961", contenttype:"DiagramModelArchimateObject"});
+
+										dataFoldersContent.push({folderid:"4cad66a2-c71c-46bf-be1a-c55570e93799", contentid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", type:"ArchimateDiagramModel", name:decodeURL("Zobrazen%C3%AD+Archimate+element%C5%AF+%28byznysov%C3%A1+vrstva%29"), documentation:decodeURL("")});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"088321cc-afcb-4202-9648-a1629b4c6e3e", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"887c6551-6a12-43a1-9fbd-dc8d6a408805", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"57e6e86c-668a-4105-a91c-e0a93a0561e3", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"f594a950-1338-420e-9e55-7c2638c486ab", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"508318bb-fd71-4062-aac6-636b4db1ec83", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"edd1deb2-0401-465e-9c3f-2888e41edc5a", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"1d513539-1ab7-47e8-a99d-0e19eea1a539", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"58404aa0-5571-4b67-a00e-281ee298c3b9", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"c145d159-6fd0-4527-a656-766b6fac2087", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"bf8531fb-9bd7-45e0-a3dd-33e440069824", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"56196210-7c89-4ae7-b5a1-1a7d9c5cc83b", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"6fc70688-dc57-43e4-ac51-68ac6cf924fb", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f27c4bbe-5a71-416d-b1a4-6830e7f9319e", contentid:"d267138b-5d6b-4abe-8f71-9e9a4e56870f", contenttype:"DiagramModelArchimateObject"});
+
+										dataFoldersContent.push({folderid:"4cad66a2-c71c-46bf-be1a-c55570e93799", contentid:"f8c0dbf1-431b-402a-80cd-28782061c7a8", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"f8c0dbf1-431b-402a-80cd-28782061c7a8", type:"ArchimateDiagramModel", name:decodeURL("Zobrazen%C3%AD+Archimate+element%C5%AF+%28strategick%C3%A1+vrstva%29"), documentation:decodeURL("")});
+													dataViewsContent.push({viewid:"f8c0dbf1-431b-402a-80cd-28782061c7a8", contentid:"f2ba3a31-e0e0-47ac-b522-bc49743b58ef", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f8c0dbf1-431b-402a-80cd-28782061c7a8", contentid:"2975d500-cdf4-4e59-8080-4de90dd4d265", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f8c0dbf1-431b-402a-80cd-28782061c7a8", contentid:"7ebdadac-1b14-4fd2-a332-1b4181b44993", contenttype:"DiagramModelArchimateObject"});
+													dataViewsContent.push({viewid:"f8c0dbf1-431b-402a-80cd-28782061c7a8", contentid:"5cf34758-7662-4138-9f9c-3d63b6e27aec", contenttype:"DiagramModelArchimateObject"});
+
+
+
+
+
+
+
+						    alasql('CREATE TABLE Elements');
+						    alasql('CREATE TABLE Properties');
+						    alasql('CREATE TABLE Relationships');
+						    alasql('CREATE TABLE Views');
+						    alasql('CREATE TABLE ViewsContent');
+						    alasql('CREATE TABLE Folders');
+						    alasql('CREATE TABLE FoldersContent');
+
+						    alasql.tables.Elements.data = dataElements;
+						    alasql.tables.Properties.data = dataProperties;
+						    alasql.tables.Relationships.data = dataRelationships;
+						    alasql.tables.Views.data = dataViews;
+						    alasql.tables.ViewsContent.data = dataViewsContent;
+						    alasql.tables.Folders.data = dataFolders;
+						    alasql.tables.FoldersContent.data = dataFoldersContent;
+						</script> 
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
